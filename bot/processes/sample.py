@@ -136,6 +136,9 @@ class SampleVideoProcess(BaseProcess):
                         )
                     )
                 )
+                try:
+                    os.remove(self.file_link)
+                except: pass
         except SampleVideoProcessFailure as e:
             log.error(e)
             await self.input_message.edit_message_text(text=e.for_user)
