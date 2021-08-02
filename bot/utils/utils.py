@@ -154,8 +154,6 @@ class Utilities:
     async def get_media_info(file_link):
         ffprobe_cmd = [
             "ffprobe",
-            "-headers",
-            f"IAM:{Config.IAM_HEADER}",
             "-i",
             file_link,
             "-v",
@@ -174,8 +172,6 @@ class Utilities:
     async def get_dimentions(file_link):
         ffprobe_cmd = [
             "ffprobe",
-            "-headers",
-            f"IAM:{Config.IAM_HEADER}",
             "-i",
             file_link,
             "-v",
@@ -201,8 +197,6 @@ class Utilities:
     async def get_duration(file_link):
         ffmpeg_dur_cmd = [
             "ffprobe",
-            "-headers",
-            f"IAM:{Config.IAM_HEADER}",
             "-i",
             file_link,
             "-v",
@@ -230,8 +224,6 @@ class Utilities:
 
         ffmpeg_dur_cmd = [
             "ffprobe",
-            "-headers",
-            f"IAM:{Config.IAM_HEADER}",
             "-i",
             file_link,
             "-v",
