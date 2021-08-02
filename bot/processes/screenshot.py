@@ -178,6 +178,10 @@ class ScreenshotsProcess(BaseProcess):
                         )
                     )
                 )
+                try:
+                    os.remove(self.file_link)
+                except: pass
+
         except ScreenshotsProcessFailure as e:
             log.error(e)
             await self.input_message.edit_message_text(e.for_user)
