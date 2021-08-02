@@ -91,9 +91,6 @@ class ScreenshotsProcess(BaseProcess):
 
             ffmpeg_cmd = [
                 "ffmpeg",
-                #"-headers",
-                #f"IAM:{Config.IAM_HEADER}",
-               # "-hide_banner",
                 "-ss",
                 "",  # To be replaced in loop
                 "-i",
