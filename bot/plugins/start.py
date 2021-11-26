@@ -8,8 +8,8 @@ from ..screenshotbot import ScreenShotBot
 @ScreenShotBot.on_message(filters.private & filters.command("start"))
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
-    username = 'Balu'
-    mention = '[Balu(https://t.me/lionel_messi_fan)'
+    username = 'Dhalapathy_vijay'
+    mention = '[Sharvin 710](https://t.me/Dhalapathy_vijay)'
     try:
         owner = await c.get_users(owner_id)
         username = owner.username if owner.username else 'Ns_AnoNymous'
