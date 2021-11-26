@@ -9,7 +9,7 @@ from ..screenshotbot import ScreenShotBot
 async def start(c, m, cb=False):
     owner_id = Config.AUTH_USERS[0]
     username = 'Balu'
-    mention = '[Anonymous](https://t.me/Ns_AnoNymous)'
+    mention = '[Balu(https://t.me/lionel_messi_fan)'
     try:
         owner = await c.get_users(owner_id)
         username = owner.username if owner.username else 'Ns_AnoNymous'
@@ -21,7 +21,7 @@ async def start(c, m, cb=False):
         InlineKeyboardButton("My Father 🧔", url=f"https://t.me/{username}"),
         InlineKeyboardButton("Updates Channel 🔰", url="https://t.me/s_bots")
         ],[
-        InlineKeyboardButton("Movie Grouo😎", url="https://t.me/new_cinema_mall")
+        InlineKeyboardButton("Movie Group😎", url="https://t.me/new_cinema_mall")
         ],[
         InlineKeyboardButton("Help ⁉️", callback_data="help"),
         InlineKeyboardButton("Settings ⚙", callback_data="set+settings")
