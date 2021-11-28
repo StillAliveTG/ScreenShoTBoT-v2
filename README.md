@@ -8,12 +8,6 @@ For now it is not suspended by heroku but dont know when it gonna suspended.
 Since i had removed host bot will download the entire file and then generate screenshots
 
 
-## Description
-
-An attempt to implement the screenshot generation of telegram files. Live version can be found here [@Screenshot_NsBot](https://t.me/Screenshot_NsBot "Screenshot Generator Bot").
-
-## Installation Guide
-
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=ScreenShoTBoT-v2)
 
 ### Prerequisites
@@ -21,28 +15,6 @@ An attempt to implement the screenshot generation of telegram files. Live versio
 * FFmpeg.
 * Python3 (3.6 or higher).
 
-### Local setup
-
-> The setup given here is for a linux environment (Debian/Ubuntu).
-
-* Clone to local machine.
-
-``` bash
-$ git clone https://github.com/odysseusmax/animated-lamp.git
-$ cd animated-lamp
-````
-
-* Create and activate virtual environment.
-
-```
-$ python3 -m venv venv
-$ source venv/bin/activate
-```
-
-* Install dependencies.
-
-```
-$ pip3 install -U -r requirements.txt
 ```
 
 ### Environment Variables
